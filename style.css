@@ -1,0 +1,100 @@
+body {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding-top: 20px;
+  }
+  
+  .todo-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    padding: 20px;
+    padding-right: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #todo-input {
+    height: 35px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding-left: 20px;
+    width: 80%;
+  }
+  
+  #add-task-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  #add-task-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  #add-task-btn:active {
+    background-color: #004080;
+    transform: scale(0.95);
+  }
+  
+  .addedtasks {
+    position: relative;
+    width: 90%;
+    padding: 10px 15px;
+    margin-top: 10px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #000000;
+    font-style: italic;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    margin-right: 40px;
+  }
+  
+  .addedtasksbtn {
+    padding: 5px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .addedtasksbtn:hover {
+    background-color: #0056b3;
+  }
+  
+  .edittext,
+  .deletetext {
+    padding: 5px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    display: none; 
+  }
+  
+  .edittext img, .deletetext img {
+    width: 15px;
+    height: 15px;
+  }
+  
